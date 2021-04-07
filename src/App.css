@@ -1,0 +1,73 @@
+html,body, #root {
+  height: 100%
+}
+.maze {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.maze-board {
+  display: flex;
+  justify-content: space-around;
+
+}
+.maze-table {
+  display: table;
+  border-collapse: collapse;
+  margin: auto;
+}
+.maze-row {
+  display: table-row;
+}
+
+.maze-cell {
+  display: table-cell;
+  border: 1px solid grey;
+  outline: 0
+}
+.custom-input::placeholder{
+  color: rgba(255,255,255,0.8)
+}
+.custom-input {
+  border: 0;
+  padding: 15px;
+  display: block;
+  outline: 0;
+  background-color: rgba(0, 0, 0, 0.2); 
+  border-radius: 0;
+  color: #fff;
+  width: calc(100% - 30px);
+  font-size: 16px;
+}
+.btn {
+  display: block;
+  width: 200px;
+  font-size: large;
+  margin: 20px auto;
+}
+.btn:focus, .btn:active{
+  box-shadow: 0px 0px 0px rgba(0,0,0,0.12);
+  transition: box-shadow 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.btn-circular {
+  border-radius: 50%;
+}
+.text-center {
+  text-align: center;
+}
+.mario {
+  background-image: url("/mario.png");
+  background-size: contain;
+}
+.green-sprite{
+  background-image: url("/enemy.png");
+  background-size: contain;
+}
+.maze-board-header{
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 20px;
+}
+
